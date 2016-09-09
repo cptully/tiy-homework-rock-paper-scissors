@@ -12,6 +12,15 @@ h1{
     padding: 0.25em 1em;
 }
 
+#logo{
+    float: left;
+}
+
+#logo > img{
+    width: 10em;
+    height: auto;
+}
+
 #outcome{
     font-size: 10vmax;
     margin: 0;
@@ -27,6 +36,10 @@ h1{
 
 #outcome.tie{
     color: blue;
+}
+
+#counter{
+    min-height: 2em;
 }
 
 .transparent{
@@ -50,16 +63,28 @@ h1{
     background-repeat: no-repeat;
 }
 
-#game > div.rock{
-    background-image: url(../images/rock.png);
+#game > div.rockwins{
+    background-image: url(../images/rock2.jpg);
 }
 
-#game > div.paper{
-    background-image: url(../images/paper.png);
+#game > div.paperwins{
+    background-image: url(../images/paper.jpg);
 }
 
-#game > div.scissors{
-    background-image: url(../images/scissors.png);
+#game > div.scissorswins{
+    background-image: url(../images/scissors.jpg);
+}
+
+#game > div.cutpaper{
+    background-image: url(../images/cut-paper.jpeg);
+}
+
+#game > div.papercoversrock{
+    background-image: url(../images/paper-covers-rock.jpg);
+}
+
+#game > div.brokenscissors{
+    background-image: url(../images/broken-scissors.jpg);
 }
 
 .score{
@@ -73,6 +98,7 @@ h1{
 #actionForm{
     font-size: 200%;
     padding: 0.25em;
+    height: 3em;
 }
 
 #actionForm div{
